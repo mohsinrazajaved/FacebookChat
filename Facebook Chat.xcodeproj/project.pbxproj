@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA3DFE51E27E6F200ED0CA1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3DFE41E27E6F200ED0CA1 /* ChatViewController.swift */; };
 		1FDD3B1B1E2675BC0008417A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD3B1A1E2675BC0008417A /* AppDelegate.swift */; };
-		1FDD3B1D1E2675BC0008417A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD3B1C1E2675BC0008417A /* ViewController.swift */; };
 		1FDD3B201E2675BC0008417A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD3B1E1E2675BC0008417A /* Main.storyboard */; };
 		1FDD3B231E2675BC0008417A /* Facebook_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD3B211E2675BC0008417A /* Facebook_Chat.xcdatamodeld */; };
 		1FDD3B251E2675BC0008417A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD3B241E2675BC0008417A /* Assets.xcassets */; };
 		1FDD3B281E2675BC0008417A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD3B261E2675BC0008417A /* LaunchScreen.storyboard */; };
+		1FDD3B301E2675D90008417A /* DatabaseContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD3B2F1E2675D90008417A /* DatabaseContoller.swift */; };
+		1FDD3B321E2678700008417A /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD3B311E2678700008417A /* FriendsViewController.swift */; };
+		1FDD3B341E2679C10008417A /* FriendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD3B331E2679C10008417A /* FriendViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA3DFE41E27E6F200ED0CA1 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = ../ChatViewController.swift; sourceTree = "<group>"; };
 		1FDD3B171E2675BC0008417A /* Facebook Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDD3B1A1E2675BC0008417A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FDD3B1C1E2675BC0008417A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FDD3B1F1E2675BC0008417A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FDD3B221E2675BC0008417A /* Facebook_Chat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Facebook_Chat.xcdatamodel; sourceTree = "<group>"; };
 		1FDD3B241E2675BC0008417A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FDD3B271E2675BC0008417A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FDD3B291E2675BC0008417A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDD3B2F1E2675D90008417A /* DatabaseContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseContoller.swift; sourceTree = "<group>"; };
+		1FDD3B311E2678700008417A /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		1FDD3B331E2679C10008417A /* FriendViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				1FDD3B1A1E2675BC0008417A /* AppDelegate.swift */,
-				1FDD3B1C1E2675BC0008417A /* ViewController.swift */,
+				1FDD3B2F1E2675D90008417A /* DatabaseContoller.swift */,
+				1FDD3B311E2678700008417A /* FriendsViewController.swift */,
+				1FA3DFE41E27E6F200ED0CA1 /* ChatViewController.swift */,
+				1FDD3B331E2679C10008417A /* FriendViewCell.swift */,
 				1FDD3B1E1E2675BC0008417A /* Main.storyboard */,
 				1FDD3B241E2675BC0008417A /* Assets.xcassets */,
 				1FDD3B261E2675BC0008417A /* LaunchScreen.storyboard */,
@@ -141,7 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FDD3B231E2675BC0008417A /* Facebook_Chat.xcdatamodeld in Sources */,
-				1FDD3B1D1E2675BC0008417A /* ViewController.swift in Sources */,
+				1FDD3B321E2678700008417A /* FriendsViewController.swift in Sources */,
+				1FDD3B341E2679C10008417A /* FriendViewCell.swift in Sources */,
+				1FDD3B301E2675D90008417A /* DatabaseContoller.swift in Sources */,
+				1FA3DFE51E27E6F200ED0CA1 /* ChatViewController.swift in Sources */,
 				1FDD3B1B1E2675BC0008417A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +316,7 @@
 				1FDD3B2E1E2675BC0008417A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
