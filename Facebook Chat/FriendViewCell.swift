@@ -11,8 +11,6 @@ import CoreData
 
 class FriendViewCell: UITableViewCell
 {
-    var unique:String?
-    
     var message:Message?
     {
        didSet
@@ -33,12 +31,6 @@ class FriendViewCell: UITableViewCell
     func updateUI()
     {
 
-        userImage.image = nil
-        smalllpic.image = nil
-        userName.text = nil
-        recentMsg.text = nil
-        
-        
         if let cellmsg = message
         {
         
@@ -49,6 +41,20 @@ class FriendViewCell: UITableViewCell
         let formatter = DateFormatter()
         formatter.dateFormat = "h:mm a"
         
+        let elapsedTimeInSeconds = NSDate().timeIntervalSince(cellmsg.msgTime as! Date)
+        
+            let secondInDays:TimeInterval = 60 * 60 * 24
+        
+            if elapsedTimeInSeconds > 7 * secondInDays
+            {
+                formatter.dateFormat = "MM/dd/yy"
+            }
+            else if elapsedTimeInSeconds > secondInDays
+            {
+              formatter.dateFormat = "EEE"
+            }
+        
+            
         userTime.text = formatter.string(from:cellmsg.msgTime as! Date)
         userImage.image = cellmsg.toFriend?.profileImage as! UIImage?
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
@@ -59,7 +65,7 @@ class FriendViewCell: UITableViewCell
         smalllpic.clipsToBounds = true
             
         }
-      }
+     }
   }
     
 

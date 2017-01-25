@@ -3,15 +3,17 @@
     <entity name="Friend" representedClassName="Friend" syncable="YES" codeGenerationType="class">
         <attribute name="friendName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="profileImage" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="lastmessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" syncable="YES"/>
         <relationship name="toMessage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="toFriend" inverseEntity="Message" syncable="YES"/>
     </entity>
     <entity name="Message" representedClassName="Message" syncable="YES" codeGenerationType="class">
+        <attribute name="isSender" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="msgText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="msgTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="toFriend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Friend" inverseName="toMessage" inverseEntity="Friend" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Friend" positionX="-333" positionY="-270" width="128" height="88"/>
-        <element name="Message" positionX="-74" positionY="-207" width="128" height="88"/>
+        <element name="Friend" positionX="-315" positionY="-211" width="128" height="103"/>
+        <element name="Message" positionX="-74" positionY="-207" width="128" height="103"/>
     </elements>
 </model>
